@@ -1,0 +1,210 @@
+.crosshair {cursor: crosshair;}
+
+body{
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  color: #c91508;
+  cursor: crosshair;
+}
+
+a{
+  text-decoration: none;
+  color: #c91508;
+}
+
+a:hover {
+  color: #e05034;
+}
+
+a:active {
+  color: #e05034;
+}
+
+button {
+  color: #c91508;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-align: right;
+  float: right;
+  cursor: pointer;
+  width: fit-content;
+  display: block;
+  cursor: crosshair;
+}
+
+button:not(:last-child) {
+  border-bottom: none;
+}
+
+button:hover {
+  color: white;
+  background-color: #c91508;
+}
+
+button:focus {
+  color: white;
+  background-color: #c91508;
+}
+
+.name{
+  position: absolute;
+  left: 6vw;
+  top: 3vh;
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.details{
+  position: absolute;
+  height: fit-content;
+  left: 6vw;
+  bottom: 5vh;
+  text-align: left;
+  float: left;
+  width: fit-content;
+  font-family: Inter;
+  display: flex;
+  align-items: flex-end;
+}
+
+.piece{
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-left: -25vw;
+  z-index: -4;
+}
+
+.piece img{
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.projects{
+  position: absolute;
+  height: fit-content;
+  right: 6vw;
+  text-align: right;
+}
+
+.contact{
+  position: absolute;
+  height: fit-content;
+  text-align: right;
+  font-weight: bold;
+  left: 6vw;
+  top: 10vh;
+}
+
+.left{
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+  z-index: -1;
+}
+
+.right {
+	width: 50%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 0px) {
+  button, .details, .contact {
+  font-size: 10px;
+  }
+
+  body{
+    font-size: 12px
+  }
+
+  .contact{
+    top: 11vh;
+  }
+  .piece {
+    width: 90vw;
+    margin-left: -45vw;
+    text-align: center;
+    top: 50%;
+    margin-top: -30vh;
+    height: 40vh;
+  }
+
+  .projects{
+    bottom: 6vh;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  button, .details, .contact {
+  font-size: 12px;
+  }
+  body{
+    font-size: 15px
+  }
+  .contact{
+    top: 12vh;
+  }
+  .piece {
+    width: 90vw;
+    margin-left: -45vw;
+    text-align: center;
+    height: 40vh;
+    top: 50%;
+    margin-top: -30vh;
+  }
+
+  .projects{
+    bottom: 6vh;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  button, .details, .contact {
+  font-size: 13px;
+  }
+  body{
+    font-size: 18px
+  }
+  .piece {
+    text-align: center;
+    width: 50vw;
+    margin-left: -25vw;
+    height: 66vh;
+    top: 50%;
+    margin-top: -35vh;
+  }
+  .projects{
+    top: 6vh;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  button, .details, .contact {
+  font-size: 14px;
+  }
+  body{
+    font-size: 18px
+  }
+  .piece {
+    text-align: center;
+    width: 50vw;
+    margin-left: -25vw;
+    height: 70vh;
+    top: 50%;
+    margin-top: -35vh;
+  }
+
+  .projects{
+    top: 6vh;
+  }
+}
