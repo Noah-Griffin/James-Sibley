@@ -1,0 +1,252 @@
+.crosshair {cursor: crosshair;}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  cursor: crosshair;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+hr{
+
+  border: black;
+}
+
+.name{
+  position: fixed;
+  left: 6.5vw;
+  top: 4%;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+#contactInfo{
+  font-size: 14px;
+  position: fixed;
+  top: 85%;
+}
+
+
+#ghost img{
+  position: fixed;
+  left: 6vw;
+  bottom: 16vh;
+  float: left;
+}
+
+
+button {
+  color: #000000;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  width: fit-content;
+
+  margin-top: 0.5vh;
+}
+
+
+button:hover {
+  color: white;
+  font-style: italic;
+  background-color: #000000;
+}
+
+button:focus {
+  color: white;
+  font-style: italic;
+  background-color: #000000;
+}
+
+
+@media only screen and (min-width: 0px) {
+  .name{
+    position: absolute;
+    font-size: 20px;
+    top: 2vh;
+    left: 7vw;
+  }
+  #mainHeaders{
+    position: absolute;
+    font-size: 8px;
+    top: 10%;
+    left: 7vw
+  }
+  #contentBox, #writingBox{
+    position: absolute;
+    display: block;
+    left: 8vw;
+    top: 40%;
+    right: 8vw;
+    padding-bottom: 1vh;
+    font-size: 10px;
+  }
+  #contentBox img{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    float: right;
+    width: 100%;
+  }
+  #writingTitles, #workTitles{
+    position: absolute;
+    left: 6vw;
+    top: 20%;
+  }
+  #ghost img{
+    max-width: 25%;
+    left: 7vw;
+  }
+  #contactInfo{
+    left: 8vw;
+    font-size: 14px;
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+
+  .name{
+    position: absolute;
+    top: 4%;
+    font-size: 22px;
+    top: 2vh;
+    left: 8vw;
+  }
+  #mainHeaders{
+    position: absolute;
+    font-size: 8px;
+    top: 10%;
+    left: 7vw;
+  }
+  #contentBox, #writingBox{
+    left: 8vw;
+    top: 40%;
+    right: 8vw;
+    padding-bottom: 1vh;
+    font-size: 10px;
+  }
+  #contentBox img{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+  }
+  #writingTitles, #workTitles{
+    position: absolute;
+    left: 7vw;
+    top: 20%;
+  }
+  #ghost img{
+    max-width: 25%;
+    left: 7vw;
+  }
+  #contactInfo{
+    left: 8vw;
+  }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+@media only screen and (min-width: 650px) {
+  .name{
+    position: fixed;
+    top: 4%;
+    font-size: 24px;
+    left: 6vw;
+  }
+  #mainHeaders{
+    position: fixed;
+    font-size: 12px;
+    top: 14%;
+    left: 6vw;
+    font-size: 10px;
+  }
+  #contentBox{
+    left: 40%;
+    top: 7vh;
+    right: 4vh;
+    padding-bottom: 9vh;
+    font-size: 12px
+  }
+  #contentBox img{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    top: 8vh;
+  }
+  #writingBox{
+    top: 14%;
+    left: 40%;
+    right: 6vw;
+    padding-bottom: 1vh;
+    font-size: 12px
+  }
+  #writingTitles, #workTitles{
+    position: fixed;
+    left: 6vw;
+    top: 75%;
+  }
+  #ghost img{
+    max-width: 8%;
+  }
+  #contactInfo{
+    left: 6vw;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .name{
+    position: fixed;
+    top: 4%;
+    font-size: 26px;
+    left: 6vw;
+  }
+  #mainHeaders{
+    font-size: 12px;
+    top: 14%;
+    left: 6vw;
+    font-size: 16px;
+  }
+  #contentBox{
+    left: 40%;
+    top: 7vh;
+    right: 4vh;
+    padding-bottom: 9vh;
+    font-size: 12px
+  }
+  #contentBox img{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  #writingBox{
+    top: 14%;
+    left: 40%;
+    right: 6vw;
+    padding-bottom: 1vh;
+    font-size: 12px
+  }
+  #writingTitles, #workTitles{
+    position: fixed;
+    left: 6vw;
+    top: 75%;
+  }
+  #ghost img{
+    max-width: 8%;
+    left: 6vw
+  }
+}

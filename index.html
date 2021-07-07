@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="arrays.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/jpg" href="assets/ghost.JPG"/>
+
+  </head>
+
+    <body>
+      <div id = "sketch">
+        <script src="sketch.js"></script>
+      </div>
+
+      <div class = "name">
+        <p id="title"><a href="/">JAMES SIBLEY</a></p>
+      </div>
+
+      <div hidden id = "ghost">
+        <img src="assets/ghost.png" alt="BOO">
+      </div>
+
+      <div id = "mainHeaders">
+        <button id="mainHeader" onClick="contentSelect(0)">SELECTED WORKS</button><br>
+        <button id="mainHeader" onClick="contentSelect(1)">WRITINGS</button><br>
+        <button id="mainHeader" onClick="contentSelect(2)">CONTACT</button><br>
+      </div>
+
+
+
+      <div hidden id = "workTitles">
+        <button onClick="workDisplay(5)">KICKING A DEAD HORSE</button><br>
+        <button onClick="workDisplay(4)">UNTITLED (DUCK HOUSE)</button><br>
+        <button onClick="workDisplay(3)">QUICKSAND</button><br>
+        <button onClick="workDisplay(2)">WRITING STRIKE!</button><br>
+        <button onClick="workDisplay(1)">JOB-LOT</button><br>
+        <button onClick="workDisplay(0)">UNTITLED LANDSCAPE</button><br>
+      </div>
+
+      <div hidden id = "writingTitles">
+        <button onClick="writingDisplay(4)">KICKING A DEAD HORSE</button><br>
+        <button onClick="writingDisplay(3)">UNTITLED (DUCK HOUSE)</button><br>
+        <button onClick="writingDisplay(2)">QUICKSAND</button><br>
+        <button onClick="writingDisplay(1)">WRITING STRIKE!</button><br>
+        <button onClick="writingDisplay(0)">A CHESSINGTON: WORLD OF <br>ADVENTURESTM RECOUNT</button><br>
+      </div>
+
+      <div hidden id = "contactInfo">
+        <a href="mailto:jamessibley1999@gmail.com">EMAIL: jamessibley1999@gmail.com</a><br>
+        <a href="https://www.instagram.com/james._.ess/">INSTAGRAM: @james._.ess</a>
+      </div>
+
+      <!-- <div id = "landingImage">
+        <img src="assets/WS 1.png" alt="Duck House Installation 1">
+      </div> -->
+
+      <div id = "contentBox"></div>
+      <div id = "writingBox"></div>
+
+</body></html>
