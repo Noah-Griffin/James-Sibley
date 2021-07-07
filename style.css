@@ -99,7 +99,7 @@ button:focus {
     position: absolute;
     display: block;
     left: 2vw;
-    top: 44vh;
+    top: 48vh;
     right: 2vw;
     font-size: 8px;
     padding-bottom: 4vw;
@@ -161,14 +161,19 @@ button:focus {
   }
 
   #contentBox{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    font-size: 6px;
-    float: right;
+    position: absolute;
+    display: block;
+    left: 2vw;
+    top: 48vh;
+    right: 2vw;
+    font-size: 10px;
+    padding-bottom: 4vw;
   }
   #contentBox img{
     margin-top: 1vh;
     margin-bottom: 1vh;
+    font-size: 6px;
+    float: right;
   }
   #writingTitles, #workTitles{
     position: absolute;
