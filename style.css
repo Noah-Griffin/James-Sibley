@@ -81,14 +81,14 @@ button:focus {
   }
   #mainHeaders{
     position: absolute;
-    top: 13vh;
+    top: 14vh;
     left: 9vw
   }
 
   #writingTitles, #workTitles{
     position: absolute;
     left: 9vw;
-    top: 23vh;
+    top: 24vh;
   }
 
   button{
@@ -109,7 +109,7 @@ button:focus {
     position: absolute;
     display: block;
     left: 10vw;
-    top: 44vh;
+    top: 46vh;
     right: 10vw;
     font-size: 10px;
     padding-bottom: 10vw;
@@ -146,17 +146,17 @@ button:focus {
   #mainHeaders{
     position: absolute;
     font-size: 8px;
-    top: 12vh;
+    top: 14vh;
     left: 7vw;
     font-size: 12px;
   }
   #writingBox{
     position: absolute;
     display: block;
-    left: 10vw;
-    top: 38vh;
-    right: 10vw;
-    font-size: 24px;
+    left: 8vw;
+    top: 46vh;
+    right: 8vw;
+    font-size: 12px;
     padding-bottom: 10vw;
   }
 
@@ -173,8 +173,7 @@ button:focus {
   #writingTitles, #workTitles{
     position: absolute;
     left: 7vw;
-    top: 21vh;
-    font-size: 20px;
+    top: 24vh;
   }
   #ghost img{
     max-width: 25%;
@@ -225,7 +224,7 @@ button:focus {
   #writingTitles, #workTitles{
     position: fixed;
     left: 6vw;
-    top: 72vh;
+    top: 75vh;
   }
   #ghost img{
     max-width: 8%;
@@ -252,7 +251,7 @@ button:focus {
     left: 6vw;
   }
   #contentBox{
-    left: 30vw;
+    left: 30%;
     top: 1vh;
     right: 2vh;
     padding-bottom: 9vh;
