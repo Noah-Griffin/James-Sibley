@@ -147,14 +147,14 @@ button:focus {
     position: absolute;
     font-size: 8px;
     top: 14vh;
-    left: 7vw;
+    left: 6vw;
     font-size: 12px;
   }
   #writingBox{
     position: absolute;
     display: block;
     left: 7vw;
-    top: 48vh;
+    top: 46vh;
     right: 8vw;
     font-size: 12px;
     padding-bottom: 10vw;
@@ -172,7 +172,7 @@ button:focus {
   }
   #writingTitles, #workTitles{
     position: absolute;
-    left: 7vw;
+    left: 6vw;
     top: 24vh;
   }
   #ghost img{
