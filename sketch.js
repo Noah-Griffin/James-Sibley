@@ -32,15 +32,6 @@ function changeColour(){
 function contentSelect(x){
   var titleContent = x;
 
-  if (run == true){
-    clearText();
-    clearBox();
-  }
-  if (writingRun == true){
-    clearWriting();
-    writingRun = false;
-  }
-
   document.getElementById("ghost").style.display = "none";
   // document.getElementById("landingImage").style.display = "none";
 
@@ -61,6 +52,15 @@ function contentSelect(x){
     break;
 
     case 2:
+      if (run == true){
+        clearBox();
+        run = false;
+      }
+
+      if (writingRun == true){
+        clearWriting();
+        writingRun = false;
+      }
       document.getElementById("contactInfo").style.display = "block";
       document.getElementById("ghost").style.display = "block";
 
@@ -71,84 +71,45 @@ function contentSelect(x){
     default:
     //
   }
+
 }
-
-
-function workDisplay(x){
-  var div = document.getElementById("contentBox");
-  var project = x;
-
+function workDisplay(contentID){
   if (run == true){
-    clearText();
-    clearBox();
-  }
-  if (writingRun == true){
-    clearWriting();
-    writingRun = false;
-  }
-
-  images[project].forEach(function(image) {
-    var img = document.createElement('img');
-    var index = images[project].indexOf(image);
-
-    if (image != ''){
-      img.src = (imageDir.concat(image));
-
-      currentImages.push(img);
-      div.appendChild(img);
-
-      currentText.push(document.createTextNode(descriptions[project][index]));
-      div.appendChild(currentText[index]);
-
-      lineBreaks.push(document.createElement('br'));
-      div.appendChild(lineBreaks[index]);
-    }
-  });
-
-  for (i=0; i < extras[project].length; i++){
-    if (extras[project][i] != ''){
-      var extraContent = document.createElement('extraContent');
-      extraContent.innerHTML += extras[project][i];
-      currentExtras.push(extraContent);
-      div.appendChild(currentExtras[i]);
-    }
-  }
-
-  run = true;
-}
-
-function clearText(){
-  for (i = 0; i < currentText.length; i++){
-    document.getElementById("contentBox").removeChild(currentText[i]);
-    document.getElementById("contentBox").removeChild(lineBreaks[i]);
-  }
-  currentText = [];
-}
-
-function clearBox(){
-  for (i = 0; i < currentImages.length; i++){
-    document.getElementById("contentBox").removeChild(currentImages[i]);
-  }
-  currentImages = [];
-
-  for (i = 0; i < currentExtras.length; i++){
-    document.getElementById("contentBox").removeChild(currentExtras[i]);
-  }
-  currentExtras = [];
-}
-
-function writingDisplay(x){
-  var project = x;
-  var div = document.getElementById("writingBox");
-
-  if (run == true){
-    clearText();
     clearBox();
     run = false;
   }
 
   if (writingRun == true){
     clearWriting();
+    writingRun = false;
+  }
+
+  document.getElementById(contentID).style.display = "block";
+  run = true;
+}
+
+function clearBox(){
+  document.getElementById('KADH').style.display = "none";
+  document.getElementById('UDH').style.display = "none";
+  document.getElementById('Q').style.display = "none";
+  document.getElementById('WS').style.display = "none";
+  document.getElementById('UL').style.display = "none";
+  document.getElementById('JL').style.display = "none";
+}
+
+
+function writingDisplay(x){
+  var project = x;
+  var div = document.getElementById("writingBox");
+
+  if (run == true){
+    clearBox();
+    run = false;
+  }
+
+  if (writingRun == true){
+    clearWriting();
+    writingRun = false;
   }
 
   div.innerHTML += writings[project];
