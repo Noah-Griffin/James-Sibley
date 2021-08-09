@@ -14,25 +14,22 @@
     <link rel="icon" type="image/png" href="assets/ghost fav 2.png"/>
 
   </head>
-    
-    <div id = "sketch">
-        <script src="sketch.js"></script>
-      </div>
 
+  <div id = "sketch">
+    <script src="sketch.js"></script>
+  </div>
     <body>
+
       <div id = "name">
         <a href="/"><img src="assets/james sibley title 2.png"></a>
-      </div>
-
-      <div hidden id = "ghost">
-        <img src="assets/ghost 2.png" alt="BOO">
       </div>
 
       <section class="parent">
         <div id = "mainHeaders">
           <button id="mainHeader" onClick="contentSelect(0)">SELECTED WORKS</button><br>
-          <button id="mainHeader" onClick="contentSelect(1)">WRITINGS</button><br>
+          <button id="mainHeader" onClick="contentSelect(1)">WRITING</button><br>
           <button id="mainHeader" onClick="contentSelect(2)">CONTACT</button><br>
+          <button id="mainHeader" onClick="contentSelect(3)">BIO</button><br>
         </div>
 
         <div hidden id = "workTitles">
@@ -45,6 +42,7 @@
         </div>
 
         <div hidden id = "writingTitles">
+          <!-- BIO is at index '0' -->
           <button onClick="writingDisplay(4)">KICKING A DEAD HORSE</button><br>
           <button onClick="writingDisplay(3)">UNTITLED (DUCK HOUSE)</button><br>
           <button onClick="writingDisplay(2)">QUICKSAND</button><br>
@@ -57,9 +55,13 @@
           <a href="https://www.instagram.com/james._.ess/">INSTAGRAM: @james._.ess</a>
         </div>
 
-        <!-- <div id = "landingImage">
-          <img src="assets/WS 1.png" alt="Duck House Installation 1">
-        </div> -->
+        <div hidden id = "ghost">
+          <img src="assets/ghost 2.png" alt="BOO">
+        </div>
+
+        <div hidden id = "bio">
+          <p>In JAMES SIBLEY’S work, fragments of personal nostalgia and cultural recurrences alike are mined in order to scrutinize, poke fun at and mourn the loss of historicity within contemporary culture at large. By mapping fissures between the phantasy of the American dream (particularly through investigating animation’s past) and its distilling effects on the fantasy of European folklore, objects and environments - both found and fabricated - are assisted to appear as though they exist(ed) in reality. For Sibley, making is bound to conceptual rigor, so that by reframing (and therefore reinscribing) the histories of an artwork’s physical conmponents, his practice - and its inclination towards authenticity - aims to transmute each scene into a tool which exacerbates and questions the hidden signifiers underpinning reality’s fabric. These ideas present themselves in the form of sculptural installation, moving image and sonic investigation. Sibley’s staged locations become conglomerates caught in flux, existing somewhere between film set and haunting experience, suspending the viewer in varying degrees of immersion. This suspension aims to problematize viewer consent when experiencing art, and looks to provide the groundwork for examining the affective bandwidth of the signs and symbols of everyday reality, alongside their origins in Hollywoodized fiction.<br><br>His work currently looks at embodying personal conceptions of fictional characters (namely in Psychedellic, Noir or Gangster laden media) in order to rethink the way work should be made, and the narratives this raises. Through this, Sibley’s drive to practically assess the role of the artist - fisrtly in terms of transmutation (artist as alchemist); and secondly in terms of the recombination of assets in order to draw out their latent properties in a controlled manner (artist as shamanic figure) - is allowed to flourish, positing that art has the potential to transcend and not merely repackage everyday reality.</p>
+        </div>
 
         <div id = "contentBox">
           <div hidden id = "KADH">
