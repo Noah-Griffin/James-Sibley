@@ -22,6 +22,7 @@ hr{
 }
 
 
+
 #contactInfo{
   position: fixed;
 }
@@ -29,7 +30,6 @@ hr{
 
 #ghost img{
   position: fixed;
-  left: 6vw;
   float: left;
 }
 
@@ -60,21 +60,15 @@ button:focus {
   background-color: black;
 }
 
-.parent:hover > #contentBox{
+.parent:hover > #contentBox, .parent:hover > #bio, .parent:hover > #writingBox, .parent:hover > #contactInfo, .parent:hover > #ghost{
   filter: blur(8px);
 }
 
-.parent:hover > #contentBox:hover{
+.parent:hover > #contentBox:hover, .parent:hover > #bio:hover, .parent:hover > #writingBox:hover, .parent:hover > #contactInfo:hover, .parent:hover > #ghost:hover{
   filter: blur(0px);
 }
 
-.parent:hover > #writingBox{
-  filter: blur(8px);
-}
 
-.parent:hover > #writingBox:hover{
-  filter: blur(0px);
-}
 
 @media only screen and (min-width: 0px) {
   #name{
@@ -106,7 +100,7 @@ button:focus {
 
   #contentBox{
     position: absolute;
-    display: block;
+
     left: 2vw;
     top: 44vh;
     right: 2vw;
@@ -114,9 +108,8 @@ button:focus {
     padding-bottom: 4vw;
   }
 
-  #writingBox{
+  #writingBox, #bio{
     position: absolute;
-    display: block;
     left: 10vw;
     top: 48vh;
     right: 10vw;
@@ -145,7 +138,71 @@ button:focus {
   }
 }
 
+
 @media only screen and (min-width: 700px) {
+  #name{
+    position: fixed;
+    top: 8vh;
+    left: 6.4vw;
+  }
+
+  #name img{
+    max-height: 5vh;
+  }
+
+  button{
+    font-size: 13px;
+    width: 26vw;
+  }
+
+  #mainHeaders{
+    position: fixed;
+    font-size: 16px;
+    top: 13vh;
+    left: 6vw;
+  }
+
+  #contentBox{
+    left: 40vw;
+    top: 3vh;
+    right: 4vh;
+    padding-bottom: 9vh;
+    font-size: 10px
+  }
+
+  #contentBox img{
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+  }
+
+  #writingBox, #bio{
+    top: 8vh;
+    left: 40vw;
+    right: 6vw;
+    padding-bottom: 1vh;
+    font-size: 14px;
+  }
+
+  #writingTitles, #workTitles{
+    position: fixed;
+    font-size: 16px;
+    left: 6vw;
+    top: 75vh;
+  }
+
+  #ghost img{
+    max-width: 12%;
+    bottom: 16vh;
+    left: 6vw;
+  }
+
+  #contactInfo{
+    font-size: 16px;
+    left: 6.2vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   #name{
     position: fixed;
     top: 9vh;
@@ -176,7 +233,7 @@ button:focus {
     margin-top: 0vh;
     margin-bottom: 1vh;
   }
-  #writingBox{
+  #writingBox, #bio{
     top: 9vh;
     left: 40vw;
     right: 6vw;
@@ -191,13 +248,7 @@ button:focus {
   }
   #ghost img{
     max-width: 12%;
-    bottom: 18vh;
-    left: 6vw;
-  }
-
-  #contactInfo{
-    font-size: 16px;
-    left: 6.2vw;
-    bottom: 12vh
+    bottom: 16vh;
+    left: 7vw;
   }
 }
