@@ -42,6 +42,7 @@ function contentSelect(x){
 
       document.getElementById("writingTitles").style.display = "none";
       document.getElementById("contactInfo").style.display = "none";
+      document.getElementById("bio").style.display = "none";
     break;
 
     case 1:
@@ -49,6 +50,7 @@ function contentSelect(x){
 
       document.getElementById("workTitles").style.display = "none";
       document.getElementById("contactInfo").style.display = "none";
+      document.getElementById("bio").style.display = "none";
     break;
 
     case 2:
@@ -64,9 +66,29 @@ function contentSelect(x){
       document.getElementById("contactInfo").style.display = "block";
       document.getElementById("ghost").style.display = "block";
 
+      document.getElementById("bio").style.display = "none";
       document.getElementById("workTitles").style.display = "none";
       document.getElementById("writingTitles").style.display = "none";
     break;
+
+    case 3:
+      if (run == true){
+        clearBox();
+        run = false;
+      }
+
+      if (writingRun == true){
+        clearWriting();
+        writingRun = false;
+      }
+      document.getElementById("bio").style.display = "block";
+
+      document.getElementById("contactInfo").style.display = "none";
+      document.getElementById("ghost").style.display = "none";
+      document.getElementById("workTitles").style.display = "none";
+      document.getElementById("writingTitles").style.display = "none";
+    break;
+
 
     default:
     //
