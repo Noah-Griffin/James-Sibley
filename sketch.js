@@ -2,6 +2,7 @@ var imageDir = "assets/";
 
 var project;
 var slide;
+var clicked = false;
 var run = false;
 var writingRun = false;
 var currentColour;
@@ -17,6 +18,7 @@ function setup(){
 document.addEventListener("click", changeColour);
 
 function changeColour(){
+  clicked = true;
   if (colourIndex < colours.length){
     colourIndex++;
   }
@@ -93,8 +95,8 @@ function contentSelect(x){
     default:
     //
   }
-
 }
+
 function workDisplay(contentID){
   if (run == true){
     clearBox();
@@ -117,6 +119,7 @@ function clearBox(){
   document.getElementById('WS').style.display = "none";
   document.getElementById('UL').style.display = "none";
   document.getElementById('JL').style.display = "none";
+  document.getElementById('DM').style.display = "none";
 }
 
 
