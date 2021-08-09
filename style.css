@@ -90,7 +90,7 @@ button:focus {
   #writingTitles, #workTitles{
     position: absolute;
     left: 8vw;
-    top: 24vh;
+    top: 26vh;
   }
 
   button{
@@ -102,9 +102,9 @@ button:focus {
     position: absolute;
 
     left: 2vw;
-    top: 44vh;
+    top: 48vh;
     right: 2vw;
-    font-size: 8px;
+    font-size: 12px;
     padding-bottom: 4vw;
   }
 
@@ -227,7 +227,7 @@ button:focus {
     top: 3vh;
     right: 4vh;
     padding-bottom: 9vh;
-    font-size: 12px
+    font-size: 14px
   }
   #contentBox img{
     margin-top: 0vh;
@@ -244,7 +244,7 @@ button:focus {
     position: fixed;
     float: bottom;
     left: 6vw;
-    top: 72vh;
+    top: 70vh;
   }
   #ghost img{
     max-width: 12%;
