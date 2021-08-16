@@ -102,7 +102,7 @@ button:focus {
     position: absolute;
 
     left: 2vw;
-    top: 52vh;
+    top: 55vh;
     right: 2vw;
     font-size: 12px;
     padding-bottom: 4vw;
@@ -111,7 +111,7 @@ button:focus {
   #writingBox, #bio{
     position: absolute;
     left: 10vw;
-    top: 52vh;
+    top: 55vh;
     right: 10vw;
     font-size: 12px;
     padding-bottom: 10vw;
