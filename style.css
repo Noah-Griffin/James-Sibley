@@ -117,7 +117,7 @@ button:focus {
     padding-bottom: 10vw;
   }
 
-  #contentBox img{
+  #contentBox img, #writingBox img{
     margin-top: 1vh;
     margin-bottom: 1vh;
     float: right;
@@ -170,7 +170,7 @@ button:focus {
     font-size: 10px
   }
 
-  #contentBox img{
+  #contentBox img, #writingBox img{
     margin-top: 0vh;
     margin-bottom: 1vh;
   }
@@ -222,7 +222,7 @@ button:focus {
     top: 15vh;
     left: 6vw;
   }
-  #contentBox{
+  #contentBox, #writingBox img{
     left: 40vw;
     top: 3vh;
     right: 4vh;
